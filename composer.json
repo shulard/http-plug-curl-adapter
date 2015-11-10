@@ -13,6 +13,7 @@
     "require": {
         "php": ">=5.4",
         "php-http/httplug": "^1.0",
+        "react/http-client": "^0.4"
     },
     "require-dev": {
         "php-http/adapter-integration-tests": "^0.1"
