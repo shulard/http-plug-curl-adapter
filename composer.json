@@ -1,6 +1,6 @@
 {
-    "name": "php-http/react-adapter",
-    "description": "React adapter for PHP-HTTP",
+    "name": "php-http/react-client",
+    "description": "React client for PHP-HTTP",
     "license": "MIT",
     "keywords": ["http", "react", "httplug"],
     "homepage": "http://php-http.org",
@@ -13,20 +13,20 @@
     "require": {
         "php": ">=5.4",
         "php-http/httplug": "^1.0",
-        "php-http/httplug-async": "~0.1@dev",
+        "php-http/message-factory": "^0.3",
         "react/http-client": "^0.4"
     },
     "require-dev": {
-        "php-http/adapter-integration-tests": "^0.1"
+        "php-http/adapter-integration-tests": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Http\\Adapter\\": "src/"
+            "Http\\React\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Http\\Adapter\\Tests\\": "tests/"
+            "Http\\React\\Tests\\": "tests/"
         }
     },
     "extra": {
